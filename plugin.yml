@@ -1,0 +1,42 @@
+name: xpconverter
+main: com.github.mobsi09.xpconverter.xpconverter
+version: 0.1
+
+commands:
+   convertxp:
+      description: enables xpconverter for the player
+      usage: /<command> [Integer]
+      permission: convertxp.convert
+      permission-message: You don't have <permission>
+   getxp:
+      description: enables getxp for the player
+      usage: /<command>
+      permission: convertxp.getxp
+      permission-message: You don't have <permission>
+   convertxpreload:
+      description: reloads the config
+      usage: /<command>
+      permission: convertxp.convertxpreload
+      permission-message: You don't have <permission>      
+   convertxpinfo:
+      description: prints out the current settings (cost for conversion and the xp -> bottle o enchant ratio
+      usage: /<command>
+      permission: convertxp.convertxpinfo
+      permission-message: You don't have <permission>              
+      
+permissions:
+   convertxp.*:
+      description: allows to check the the persons xpamount and fill it into bottels
+      children:
+         convertxp.convert: true
+         convertxp.getxp: true
+         convertxp.convertxpinfo: true
+   convertxp.convert:
+      default: true
+      description: Gives access to the xpconverter
+   convertxp.getxp:
+      default: true
+   convertxp.convertxpreload:
+      default: op
+   convertxp.convertxpinfo:
+      default: true

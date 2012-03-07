@@ -1,0 +1,5 @@
+MoneyCostPerBottle: 0
+#This is the Cost per Bottle o Enchant the player gets
+XpCostPerBottle: 7
+#This is the amount of xp for one Bottle o Enchant that the player gets  
+#seeing that a Bottle o Enchant gives 3 to 11 xp if used 7 seems like a good figure
